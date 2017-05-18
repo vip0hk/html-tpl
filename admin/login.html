@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>window</title>
+	<style>
+		html,body{
+			margin: 0;
+			padding: 0;
+			height: 100%;
+		}
+		header{
+			height: 50px;
+			background: yellow;
+		}
+ 		footer{
+			height: 60px;
+			background: blue;
+			/*固定底部*/
+			position: fixed;
+			width: 100%;
+			bottom: 0;
+		}
+		body{
+			减去底部的高度，因为底部fixed不占高
+			height: calc(100% - 60px);
+		} 
+		.login-wrapper{
+			
+			height: calc(100% - 50px);
+			width: 100%;
+		}
+		.login-box{
+			background: #3e6;
+			height: 300px;
+			width:400px;
+			/*水平居中*/
+			margin: 0 auto;
+
+			/*垂直居中*/
+			position: relative;
+            top: 50%; /*偏移*/
+            /*高度一半+顶部的高度*/
+            margin-top: -200px;
+		}
+		
+	</style>
+</head>
+<body>
+	<header>菜单</header>
+	<div class="login-wrapper">
+		<div class="login-box">
+		登录框
+		
+		</div>
+	</div>
+	<footer>copy right</footer>
+</body>
+</html>
