@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>window</title>
+	<style>
+		html,body{
+			margin: 0;
+			padding: 0;
+			height: 100%;
+		}
+		header{
+			height: 50px;
+			background: yellow;
+		}
+/* 		footer{
+	height: 60px;
+	background: blue;
+	固定底部
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	z-index: -999;
+}
+body{
+	减去底部的高度，因为底部fixed不占高
+	height: calc(100% - 60px);
+} */
+		.left-menu,.right-wrapper{
+			/* 减去顶部高度*/
+			height: calc(100% - 50px);
+			overflow-y: auto;
+		}
+
+		.left-menu{
+			background: #3e6;
+			float: left;
+			width: 180px;
+		}
+		.right-wrapper{
+			background: #63e;
+		}
+
+
+		/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+		::-webkit-scrollbar  
+		{  
+		    width: 6px;  
+		    height: 16px;  
+		    background-color: #F5F5F5;  
+		}  
+		  
+		/*定义滚动条轨道 内阴影+圆角*/  
+		::-webkit-scrollbar-track  
+		{  
+		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+		    border-radius: 10px;  
+		    background-color: #F5F5F5;  
+		}  
+		  
+		/*定义滑块 内阴影+圆角*/  
+		::-webkit-scrollbar-thumb  
+		{  
+		    border-radius: 10px;  
+		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+		    background-color: #555;  
+		}  
+	</style>
+</head>
+<body>
+	<header>菜单</header>
+	<div class="left-menu">左边导航
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+
+	</div>
+	<div class="right-wrapper">右边工作区
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+		<p>超出内容</p>
+
+	</div>
+	<!-- <footer>copy right</footer> -->
+</body>
+</html>
